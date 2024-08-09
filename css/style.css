@@ -1,0 +1,279 @@
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #fffdd0;
+}
+
+.frame {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 190px;
+  margin-left: -200px;
+  border-radius: 2px;
+  background: #E56262;
+  color: #fff;
+}
+
+.center {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  top: 90px;
+  left: 90px;
+}
+
+.dot-1 {
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  top: 95px;
+  left: 95px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: jump-jump-1 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+  animation: jump-jump-1 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+.dot-2 {
+  position: absolute;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  top: 80px;
+  left: 80px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: jump-jump-2 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+  animation: jump-jump-2 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+.dot-3 {
+  position: absolute;
+  z-index: 1;
+  width: 90px;
+  height: 90px;
+  top: 65px;
+  left: 65px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: jump-jump-3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+  animation: jump-jump-3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+@-webkit-keyframes jump-jump-1 {
+
+  0%,
+  70% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes jump-jump-1 {
+
+  0%,
+  70% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes jump-jump-2 {
+
+  0%,
+  40% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes jump-jump-2 {
+
+  0%,
+  40% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes jump-jump-3 {
+
+  0%,
+  10% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes jump-jump-3 {
+
+  0%,
+  10% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*---------------------------
+        NAV BAR CSS
+-----------------------------*/
+.cf-nav {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  margin-top: 15px;
+  animation: 0.5s ease-in 0s 1 easeIn;
+  transition: all 0.7s linear;
+}
+
+.logo {
+  transition: all 0.7s linear;
+  width: 100px;
+  height: 100px;
+  display: block;
+  text-indent: -9999px;
+}
+
+
+.cf-nav-sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  margin-top: 0;
+  z-index: 9999;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 15px 0;
+  transition: all 0.3s linear;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:active,
+.navbar-light .navbar-nav .nav-item .nav-link:focus,
+.navbar-light .navbar-nav .active,
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+  color: #f15f2a !important;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  padding: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:before,
+.navbar-light .navbar-nav .active:before,
+.navbar-light .navbar-nav .nav-item .nav-link:focus:before,
+.navbar-light .navbar-nav .active>.nav-link:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #f15f2a;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:before,
+.navbar-light .navbar-nav .nav-item .nav-link:focus:before,
+.navbar-light .navbar-nav .active>.nav-link:before {
+  opacity: 1;
+}
+
+.navbar-light .navbar-nav .nav-item:last-child {
+  padding-top: 25px;
+  padding-right: 0;
+}
+
+.all-btn {
+  background: #f15f2a;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 1;
+  transition: all 0.2s linear;
+  border: none;
+  border-radius: 0 !important;
+  color: #fff;
+  padding: 10px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.all-btn:hover {
+  transform: scale(1.1);
+}
